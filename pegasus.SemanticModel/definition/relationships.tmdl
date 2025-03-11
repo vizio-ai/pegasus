@@ -1,0 +1,70 @@
+relationship 69d62c68-fbbb-4ad7-8dd2-d867699c1551
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'sys database_firewall_rules'.create_date
+	toColumn: LocalDateTable_4f8f1b67-ea4a-455c-89fa-0917ce2471f9.Date
+
+relationship 03607065-0645-467e-bee6-f0f34163222e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'sys database_firewall_rules'.modify_date
+	toColumn: LocalDateTable_1d9acb75-c35c-4b47-8bfb-ab88b739eb1c.Date
+
+relationship f818254a-42b4-4786-b2e3-81f77e93a497
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Campaign.hs_end_date
+	toColumn: LocalDateTable_fe347f23-600d-4789-93ed-4c1f14012085.Date
+
+relationship 7b33bcd9-6743-4a38-9afa-e78922a79b51
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Campaign.hs_start_date
+	toColumn: LocalDateTable_860f348f-3888-4af9-bfb9-9e2ca6aba7ad.Date
+
+relationship eebed5be-6a30-4596-9a65-27c65ab03767
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.CreatedAt
+	toColumn: LocalDateTable_85a36679-7192-4431-bfd9-83d5610d989d.Date
+
+relationship cb7e7857-9cad-4c5f-8b98-b57dc336f802
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.hs_createdate
+	toColumn: LocalDateTable_22ec3e47-d4e2-43aa-ad56-da542456bef9.Date
+
+relationship cc781aa2-676f-48f3-b037-95f0b7563cdc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.hs_invite_accepted_time
+	toColumn: LocalDateTable_c335b909-3945-4433-a638-6ee45648559d.Date
+
+relationship e7a7656f-4bdc-44e5-8efc-b0b61558cbd7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.hs_last_activity_time
+	toColumn: LocalDateTable_bde0f7bb-c943-4ed6-b269-a32ee905e919.Date
+
+relationship 028d917d-10fe-46e6-a094-b7160545803e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.hs_last_password_change
+	toColumn: LocalDateTable_1ce94337-3311-4455-8f93-43a75f0386c4.Date
+
+relationship 8089938a-4837-4120-8ff6-90993bcad616
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.hs_lastmodifieddate
+	toColumn: LocalDateTable_5e8f143a-83d8-4e92-94b6-b058d65b1c6f.Date
+
+relationship 045b84b2-dd74-4f44-bab4-04b9e4ea62fd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.hubspot_owner_assigneddate
+	toColumn: LocalDateTable_9e75a800-6abe-4391-9c09-e15f86b85896.Date
+
+relationship 0e529e83-2e0a-4564-b783-ae459f7665d1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Owner.UpdatedAt
+	toColumn: LocalDateTable_5cd19da0-7494-4e11-806f-3357f78080dc.Date
+
+relationship cf84d488-6ed4-4357-9486-327b4325af44
+	joinOnDateBehavior: datePartOnly
+	fromColumn: SyncHistory.SyncTime_UTC
+	toColumn: LocalDateTable_60b03b44-ef23-4ebc-949d-736967888508.Date
+
+relationship f458f310-8347-4bdd-b5a2-3330f92dce5e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Workflow.EnrolledDate
+	toColumn: LocalDateTable_3b8c7a60-6882-4f40-ab3c-2fda3ef67f6a.Date
+

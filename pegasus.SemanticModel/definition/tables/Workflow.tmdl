@@ -1,0 +1,104 @@
+table Workflow
+	lineageTag: fc897d42-b782-4682-8f91-1e6b7d7dcd28
+
+	column Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8737ccdd-a6c1-4e5e-a7ff-409b2873d649
+		summarizeBy: count
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contactlistids.active'
+		dataType: double
+		lineageTag: 9536c904-e14d-4127-b79c-28cc7013dce3
+		summarizeBy: sum
+		sourceColumn: Contactlistids.active
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Contactlistids.completed'
+		dataType: double
+		lineageTag: 1b0205aa-cd58-49c7-bfa1-fa36eb858d20
+		summarizeBy: sum
+		sourceColumn: Contactlistids.completed
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Contactlistids.enrolled'
+		dataType: double
+		lineageTag: a21f20cc-ed8f-4101-b5f0-e6a1b76bf296
+		summarizeBy: sum
+		sourceColumn: Contactlistids.enrolled
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Contactlistids.succeeded'
+		dataType: double
+		lineageTag: ec133fe0-8a12-4d39-af91-660e6b15b60d
+		summarizeBy: sum
+		sourceColumn: Contactlistids.succeeded
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Enabled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 24bc7f32-358b-4e3e-bf50-176db4649e7d
+		summarizeBy: none
+		sourceColumn: Enabled
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnrolledDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 80f3406f-7030-4cbd-becf-0800a1428257
+		summarizeBy: none
+		sourceColumn: EnrolledDate
+
+		variation Variation
+			isDefault
+			relationship: f458f310-8347-4bdd-b5a2-3330f92dce5e
+			defaultHierarchy: LocalDateTable_3b8c7a60-6882-4f40-ab3c-2fda3ef67f6a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: bd18730a-ed75-4343-b876-f3a605f69de0
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Succeedlistid
+		dataType: double
+		lineageTag: 4a1bcacd-f775-4b14-ab04-b2d224d4dc74
+		summarizeBy: sum
+		sourceColumn: Succeedlistid
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Workflow = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("datawarehouse-io-eur.database.windows.net", "Dev1102"),
+				    dbo_Workflow = Source{[Schema="dbo",Item="Workflow"]}[Data]
+				in
+				    dbo_Workflow
+
+	annotation PBI_ResultType = Table
+

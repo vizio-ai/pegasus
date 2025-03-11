@@ -1,0 +1,75 @@
+table 'sys database_firewall_rules'
+	lineageTag: d44100dc-c97e-4a00-a557-aea06c1b581d
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 179e09c1-a614-4464-a38a-7e3f65d6ffd8
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: 12f034e7-6573-4083-b73f-c14f35d5986f
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_ip_address
+		dataType: string
+		lineageTag: a01133b9-3e53-4164-80ea-d4480e5b8e9b
+		summarizeBy: none
+		sourceColumn: start_ip_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_ip_address
+		dataType: string
+		lineageTag: 7e24d9fc-6b83-4304-946c-faa6e3904ef7
+		summarizeBy: none
+		sourceColumn: end_ip_address
+
+		annotation SummarizationSetBy = Automatic
+
+	column create_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ff580d07-e16f-4304-b79b-4fb568cf2477
+		summarizeBy: none
+		sourceColumn: create_date
+
+		variation Variation
+			isDefault
+			relationship: 69d62c68-fbbb-4ad7-8dd2-d867699c1551
+			defaultHierarchy: LocalDateTable_4f8f1b67-ea4a-455c-89fa-0917ce2471f9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modify_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0740894b-e557-4070-a50e-b7e222fa0254
+		summarizeBy: none
+		sourceColumn: modify_date
+
+		variation Variation
+			isDefault
+			relationship: 03607065-0645-467e-bee6-f0f34163222e
+			defaultHierarchy: LocalDateTable_1d9acb75-c35c-4b47-8bfb-ab88b739eb1c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'sys database_firewall_rules' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("datawarehouse-io-eur.database.windows.net", "Dev1102"),
+				    sys_database_firewall_rules = Source{[Schema="sys",Item="database_firewall_rules"]}[Data]
+				in
+				    sys_database_firewall_rules
+
+	annotation PBI_ResultType = Table
+

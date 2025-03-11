@@ -1,0 +1,45 @@
+table SyncHistory
+	lineageTag: f1db4d4e-15bd-4232-a887-481e2ff60bef
+
+	column APIType
+		dataType: string
+		lineageTag: d16f666c-605f-40e8-9833-7f4b0438b576
+		summarizeBy: none
+		sourceColumn: APIType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Processed
+		dataType: int64
+		formatString: 0
+		lineageTag: a930e643-d64e-475b-aaec-3c8a6847dcdd
+		summarizeBy: sum
+		sourceColumn: Processed
+
+		annotation SummarizationSetBy = Automatic
+
+	column SyncTime_UTC
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 926fd405-30a8-4fa8-9090-8bfd21eb8192
+		summarizeBy: none
+		sourceColumn: SyncTime_UTC
+
+		variation Variation
+			isDefault
+			relationship: cf84d488-6ed4-4357-9486-327b4325af44
+			defaultHierarchy: LocalDateTable_60b03b44-ef23-4ebc-949d-736967888508.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SyncHistory = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("datawarehouse-io-eur.database.windows.net", "Dev1102"),
+				    dbo_SyncHistory = Source{[Schema="dbo",Item="SyncHistory"]}[Data]
+				in
+				    dbo_SyncHistory
+
+	annotation PBI_ResultType = Table
+

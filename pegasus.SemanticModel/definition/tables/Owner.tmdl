@@ -1,0 +1,638 @@
+table Owner
+	lineageTag: a5418f83-a803-4a18-b55b-db40fb00b3e7
+
+	column hubspot_owner_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c9a5f35b-8df2-4364-84e2-775483b478be
+		summarizeBy: sum
+		sourceColumn: hubspot_owner_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0bdae64f-fd9e-4c77-91ed-fac89aace244
+		summarizeBy: none
+		sourceColumn: CreatedAt
+
+		variation Variation
+			isDefault
+			relationship: eebed5be-6a30-4596-9a65-27c65ab03767
+			defaultHierarchy: LocalDateTable_85a36679-7192-4431-bfd9-83d5610d989d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Email
+		dataType: string
+		lineageTag: 1bfd6d3f-301b-4ea8-8c22-3870eca28178
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		lineageTag: 74f1e917-395b-4920-a25f-5ac13edc31c2
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column HasContactsAccess
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 66ce18aa-aaab-4787-9d82-77ffebfaf0f7
+		summarizeBy: none
+		sourceColumn: HasContactsAccess
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_access
+		dataType: string
+		lineageTag: d080cd59-b2a9-474a-b394-763682c66de6
+		summarizeBy: none
+		sourceColumn: hs_access
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_additional_phone
+		dataType: string
+		lineageTag: e73f3631-af30-439e-b885-cda8479f0f5a
+		summarizeBy: none
+		sourceColumn: hs_additional_phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_all_assigned_business_unit_ids
+		dataType: string
+		lineageTag: 2ae34995-aa81-4569-ad6c-3e36bfebb880
+		summarizeBy: none
+		sourceColumn: hs_all_assigned_business_unit_ids
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_assigned_permission_sets
+		dataType: string
+		lineageTag: 66ca797d-0be7-4fbe-9c0e-5cdeb1452e3e
+		summarizeBy: none
+		sourceColumn: hs_assigned_permission_sets
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_assigned_seats
+		dataType: string
+		lineageTag: 60f1ee9b-1e8e-4b89-8478-f9b71209003a
+		summarizeBy: none
+		sourceColumn: hs_assigned_seats
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_availability_status
+		dataType: string
+		lineageTag: 374e9407-4676-4943-9078-1d1b84d20b69
+		summarizeBy: none
+		sourceColumn: hs_availability_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_calendar_connection_status
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8a4d8aa1-c439-4746-b6be-90986caf721f
+		summarizeBy: none
+		sourceColumn: hs_calendar_connection_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_calendar_sync_enabled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ec680db2-67a6-4581-ba14-53963cb2a748
+		summarizeBy: none
+		sourceColumn: hs_calendar_sync_enabled
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_connected_email_status
+		dataType: string
+		lineageTag: 2edb1022-604a-4825-9b17-1b7586225cb6
+		summarizeBy: none
+		sourceColumn: hs_connected_email_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_createdate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5ec04327-0e5b-48fd-9820-eb89904965d1
+		summarizeBy: none
+		sourceColumn: hs_createdate
+
+		variation Variation
+			isDefault
+			relationship: cb7e7857-9cad-4c5f-8b98-b57dc336f802
+			defaultHierarchy: LocalDateTable_22ec3e47-d4e2-43aa-ad56-da542456bef9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_deactivated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c92854a4-1a16-48ca-9673-397e8b6b6bcc
+		summarizeBy: none
+		sourceColumn: hs_deactivated
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_email
+		dataType: string
+		lineageTag: a19658d6-1273-473f-b4ab-b9e47fdb1e8e
+		summarizeBy: none
+		sourceColumn: hs_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_family_name
+		dataType: string
+		lineageTag: af4a1054-b407-42c7-a515-859324cd2cfb
+		summarizeBy: none
+		sourceColumn: hs_family_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_given_name
+		dataType: string
+		lineageTag: 63efc4b8-8494-4968-95c7-a18a36cfe362
+		summarizeBy: none
+		sourceColumn: hs_given_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_hubspot_jita_user
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 492f2159-1028-46fe-bbe3-53bddbdc4929
+		summarizeBy: none
+		sourceColumn: hs_hubspot_jita_user
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_internal_user_id
+		dataType: double
+		lineageTag: 70c34184-20b3-4ba8-97af-53cb0ab7c2b8
+		summarizeBy: sum
+		sourceColumn: hs_internal_user_id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hs_invite_accepted_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 264b0fa3-9ee9-4db1-83b5-9bba664bedf5
+		summarizeBy: none
+		sourceColumn: hs_invite_accepted_time
+
+		variation Variation
+			isDefault
+			relationship: cc781aa2-676f-48f3-b037-95f0b7563cdc
+			defaultHierarchy: LocalDateTable_c335b909-3945-4433-a638-6ee45648559d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_invite_email_status
+		dataType: string
+		lineageTag: 81198b26-b0c4-409e-abaa-4ddbd44c3eda
+		summarizeBy: none
+		sourceColumn: hs_invite_email_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_invite_status
+		dataType: string
+		lineageTag: 23e211a9-4131-4873-8848-7b5ce252cab1
+		summarizeBy: none
+		sourceColumn: hs_invite_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_is_app_service_account
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 01ecad9c-a758-455e-a05d-f7e039438da4
+		summarizeBy: none
+		sourceColumn: hs_is_app_service_account
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_is_bot
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b12c2195-1cae-4102-b2be-73c043e06fff
+		summarizeBy: none
+		sourceColumn: hs_is_bot
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_is_hubspot_generated_app_service_account
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4a9b46e4-1b82-440e-b384-18729a7b3290
+		summarizeBy: none
+		sourceColumn: hs_is_hubspot_generated_app_service_account
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_is_in_working_hours
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 02b1ba55-4cea-4719-bb21-a4e40aa323e9
+		summarizeBy: none
+		sourceColumn: hs_is_in_working_hours
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_is_out_of_office
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2c5b8f9b-fff9-499e-96cd-b9b9f258c0ff
+		summarizeBy: none
+		sourceColumn: hs_is_out_of_office
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_is_partner_user
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8f962a72-de21-47dd-a10c-482e650d4685
+		summarizeBy: none
+		sourceColumn: hs_is_partner_user
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_job_title
+		dataType: string
+		lineageTag: 4decd7c9-102f-48a5-983c-2a73a1788d5e
+		summarizeBy: none
+		sourceColumn: hs_job_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_last_activity_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 96ee6562-92d6-47ec-a1da-53ddbea62c3b
+		summarizeBy: none
+		sourceColumn: hs_last_activity_time
+
+		variation Variation
+			isDefault
+			relationship: e7a7656f-4bdc-44e5-8efc-b0b61558cbd7
+			defaultHierarchy: LocalDateTable_bde0f7bb-c943-4ed6-b269-a32ee905e919.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_last_password_change
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3777480a-f83a-4f83-bd58-13fbf54fc222
+		summarizeBy: none
+		sourceColumn: hs_last_password_change
+
+		variation Variation
+			isDefault
+			relationship: 028d917d-10fe-46e6-a094-b7160545803e
+			defaultHierarchy: LocalDateTable_1ce94337-3311-4455-8f93-43a75f0386c4.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_last_property_updated_time
+		dataType: double
+		lineageTag: 473f38c3-ef46-4a3b-ad05-95935e8fae24
+		summarizeBy: sum
+		sourceColumn: hs_last_property_updated_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hs_lastmodifieddate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 166bf093-090a-4dda-bbee-78d463b19f34
+		summarizeBy: none
+		sourceColumn: hs_lastmodifieddate
+
+		variation Variation
+			isDefault
+			relationship: 8089938a-4837-4120-8ff6-90993bcad616
+			defaultHierarchy: LocalDateTable_5e8f143a-83d8-4e92-94b6-b058d65b1c6f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_main_phone
+		dataType: string
+		lineageTag: 12a18b0f-c07e-4a58-ae34-e1722fbdc215
+		summarizeBy: none
+		sourceColumn: hs_main_phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_main_user_language_skill
+		dataType: string
+		lineageTag: 645da308-1adf-40df-a99a-781171957bb7
+		summarizeBy: none
+		sourceColumn: hs_main_user_language_skill
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_manager
+		dataType: string
+		lineageTag: 040640ec-82ea-4396-aa88-20073210d061
+		summarizeBy: none
+		sourceColumn: hs_manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_meetings_enabled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3271389d-2b47-4371-be75-2869b84b5251
+		summarizeBy: none
+		sourceColumn: hs_meetings_enabled
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_object_source
+		dataType: string
+		lineageTag: 16f370c2-b1e9-4650-afe2-59e86fc275a5
+		summarizeBy: none
+		sourceColumn: hs_object_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_object_source_detail_1
+		dataType: string
+		lineageTag: 53d9e953-597e-4cdd-a732-49fff5629a5d
+		summarizeBy: none
+		sourceColumn: hs_object_source_detail_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_object_source_detail_2
+		dataType: string
+		lineageTag: aed15cfa-376f-4be3-a5db-0a7fb42bf8ba
+		summarizeBy: none
+		sourceColumn: hs_object_source_detail_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_object_source_detail_3
+		dataType: string
+		lineageTag: 103afc4b-66e4-40d3-a931-a5d3888438a6
+		summarizeBy: none
+		sourceColumn: hs_object_source_detail_3
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_object_source_id
+		dataType: string
+		lineageTag: 14a027b0-2487-4f5e-90df-8089dd881896
+		summarizeBy: none
+		sourceColumn: hs_object_source_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_object_source_label
+		dataType: string
+		lineageTag: d6399c19-fbfb-40c2-98bf-ecdbe0e28b24
+		summarizeBy: none
+		sourceColumn: hs_object_source_label
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_out_of_office_hours
+		dataType: string
+		lineageTag: 9d862b7e-4a98-4bc4-99f7-c7807ce019e7
+		summarizeBy: none
+		sourceColumn: hs_out_of_office_hours
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_partner_user
+		dataType: string
+		lineageTag: b6d0ecd6-4e54-4cf9-8e80-c984cb86f150
+		summarizeBy: none
+		sourceColumn: hs_partner_user
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_read_only
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 40e2ee55-82b0-49f6-995c-4b346fef69eb
+		summarizeBy: none
+		sourceColumn: hs_read_only
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_scim_status
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 250aa4e2-c001-4249-bea9-d965f82130ca
+		summarizeBy: none
+		sourceColumn: hs_scim_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_searchable_calculated_name
+		dataType: string
+		lineageTag: f2759065-6aa8-4e9e-bef5-7b0c1da6dd6b
+		summarizeBy: none
+		sourceColumn: hs_searchable_calculated_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_secondary_user_language_skills
+		dataType: string
+		lineageTag: c0cbc12f-b638-473a-a68a-33d6548f98e3
+		summarizeBy: none
+		sourceColumn: hs_secondary_user_language_skills
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_shared_team_ids
+		dataType: string
+		lineageTag: 8c59bd1f-2638-4d07-aa7f-61f29345e8e9
+		summarizeBy: none
+		sourceColumn: hs_shared_team_ids
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_standard_time_zone
+		dataType: string
+		lineageTag: 6d44b2fd-e13a-4422-8d6d-682156febe44
+		summarizeBy: none
+		sourceColumn: hs_standard_time_zone
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_uncategorized_skills
+		dataType: string
+		lineageTag: c1c0835d-84cf-4213-9ea6-d8ff21a3e6d4
+		summarizeBy: none
+		sourceColumn: hs_uncategorized_skills
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_unique_creation_key
+		dataType: string
+		lineageTag: e1e1ad51-4119-458c-882a-ce3ddd10ec5e
+		summarizeBy: none
+		sourceColumn: hs_unique_creation_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_user_secondary_teams
+		dataType: string
+		lineageTag: 1c870176-524c-4138-b64c-1208ba38121f
+		summarizeBy: none
+		sourceColumn: hs_user_secondary_teams
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_was_imported
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8326132f-e8f0-46d9-b95f-9731ea4f12b7
+		summarizeBy: none
+		sourceColumn: hs_was_imported
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_working_hours
+		dataType: string
+		lineageTag: d62477b5-b784-4fa4-8cb4-67ad92fec5dc
+		summarizeBy: none
+		sourceColumn: hs_working_hours
+
+		annotation SummarizationSetBy = Automatic
+
+	column hubspot_owner_assigneddate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bbd172c1-0fd9-4ea6-9454-b65d70f6e0ff
+		summarizeBy: none
+		sourceColumn: hubspot_owner_assigneddate
+
+		variation Variation
+			isDefault
+			relationship: 045b84b2-dd74-4f44-bab4-04b9e4ea62fd
+			defaultHierarchy: LocalDateTable_9e75a800-6abe-4391-9c09-e15f86b85896.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hubspot_team_id
+		dataType: string
+		lineageTag: 04d0728b-4819-42c1-8dee-3c0d8af3c9eb
+		summarizeBy: none
+		sourceColumn: hubspot_team_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsDeactivated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 45c3833e-ce10-4471-a307-039348a9a9f2
+		summarizeBy: none
+		sourceColumn: IsDeactivated
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsSuperAdmin
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3521eb64-72ad-4dd7-8c35-767e20a880c9
+		summarizeBy: none
+		sourceColumn: IsSuperAdmin
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		lineageTag: 55a52616-d488-4557-b759-75f52f6c8501
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column PortalId
+		dataType: int64
+		formatString: 0
+		lineageTag: 1b6f9d4a-1f77-4ed8-b756-add06515ce0d
+		summarizeBy: count
+		sourceColumn: PortalId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Role
+		dataType: string
+		lineageTag: 0f31af8b-9db2-4291-8d50-2162d4a95538
+		summarizeBy: none
+		sourceColumn: Role
+
+		annotation SummarizationSetBy = Automatic
+
+	column Teams
+		dataType: string
+		lineageTag: ab785cab-5249-4caf-86e2-062ed67a5a89
+		summarizeBy: none
+		sourceColumn: Teams
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: f2d9907e-772d-474e-a877-05a42dc1e0f9
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdatedAt
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 062a6110-7db2-4bda-a906-1e01b71b253c
+		summarizeBy: none
+		sourceColumn: UpdatedAt
+
+		variation Variation
+			isDefault
+			relationship: 0e529e83-2e0a-4564-b783-ae459f7665d1
+			defaultHierarchy: LocalDateTable_5cd19da0-7494-4e11-806f-3357f78080dc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserId
+		dataType: int64
+		formatString: 0
+		lineageTag: 82b27c7f-d960-4546-a482-8e599ad7d606
+		summarizeBy: count
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Owner = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("datawarehouse-io-eur.database.windows.net", "Dev1102"),
+				    dbo_Owner = Source{[Schema="dbo",Item="Owner"]}[Data]
+				in
+				    dbo_Owner
+
+	annotation PBI_ResultType = Table
+

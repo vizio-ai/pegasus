@@ -1,0 +1,30 @@
+table CallDisposition
+	lineageTag: 6c0803f3-0bfc-46ed-9d3e-67e601a4ee57
+
+	column DispositionId
+		dataType: string
+		lineageTag: 1945e300-8c4d-4936-a992-587aad69963b
+		summarizeBy: none
+		sourceColumn: DispositionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Label
+		dataType: string
+		lineageTag: 476b0ae7-e6ee-48c9-9abd-5363bf2528ad
+		summarizeBy: none
+		sourceColumn: Label
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CallDisposition = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("datawarehouse-io-eur.database.windows.net", "Dev1102"),
+				    dbo_CallDisposition = Source{[Schema="dbo",Item="CallDisposition"]}[Data]
+				in
+				    dbo_CallDisposition
+
+	annotation PBI_ResultType = Table
+

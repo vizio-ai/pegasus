@@ -1,0 +1,248 @@
+table Campaign
+	lineageTag: 949e0f0d-60f8-4653-ab2e-aab438019f15
+
+	column CampaignId
+		dataType: string
+		lineageTag: a7c01dbf-e0e3-4515-b661-cba2adebe7f4
+		summarizeBy: none
+		sourceColumn: CampaignId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Budget_BudgetItems
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ced9f73-e6bc-4480-b538-266afb647b1e
+		summarizeBy: sum
+		sourceColumn: Budget_BudgetItems
+
+		annotation SummarizationSetBy = Automatic
+
+	column Budget_BudgetTotal
+		dataType: double
+		lineageTag: 9f489011-d4d3-4333-9aa5-2f1d6ff3b1eb
+		summarizeBy: sum
+		sourceColumn: Budget_BudgetTotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Budget_CurrencyCode
+		dataType: string
+		lineageTag: d5ee640a-01fa-4f36-b105-1c18724dc330
+		summarizeBy: none
+		sourceColumn: Budget_CurrencyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Budget_RemainingBudget
+		dataType: double
+		lineageTag: bc9dca24-f33a-47d6-ac61-e09ebd3630ad
+		summarizeBy: sum
+		sourceColumn: Budget_RemainingBudget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Budget_SpendItems
+		dataType: int64
+		formatString: 0
+		lineageTag: 440f7133-d38a-4dd0-ac34-289e936604e1
+		summarizeBy: sum
+		sourceColumn: Budget_SpendItems
+
+		annotation SummarizationSetBy = Automatic
+
+	column Budget_SpendTotal
+		dataType: double
+		lineageTag: 0fc7b2b7-0121-45bb-86bc-12dd48b43f80
+		summarizeBy: sum
+		sourceColumn: Budget_SpendTotal
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CampaignName
+		dataType: string
+		lineageTag: 85a5fb80-c856-4fb3-a846-ed66198c31e8
+		summarizeBy: none
+		sourceColumn: CampaignName
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_audience
+		dataType: string
+		lineageTag: 69655738-b065-40e8-aabb-8b458e245469
+		summarizeBy: none
+		sourceColumn: hs_audience
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_budget_items_sum_amount
+		dataType: double
+		lineageTag: 6c2f1197-cc85-400d-8402-5b339a172439
+		summarizeBy: sum
+		sourceColumn: hs_budget_items_sum_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hs_campaign_status
+		dataType: string
+		lineageTag: bd274baf-6b1c-447c-ad15-639fcfc43c6d
+		summarizeBy: none
+		sourceColumn: hs_campaign_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_color_hex
+		dataType: string
+		lineageTag: 40b128d4-de06-4fe3-bad1-5af6b07487ef
+		summarizeBy: none
+		sourceColumn: hs_color_hex
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_created_by_user_id
+		dataType: double
+		lineageTag: 60476947-c215-411b-b5f8-021b4b57ca67
+		summarizeBy: sum
+		sourceColumn: hs_created_by_user_id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hs_currency_code
+		dataType: string
+		lineageTag: a07b781a-3da8-4b6d-a18d-9b80813b168e
+		summarizeBy: none
+		sourceColumn: hs_currency_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_end_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: dc44f34b-e104-4b59-a8da-bfe2562d5e8b
+		summarizeBy: none
+		sourceColumn: hs_end_date
+
+		variation Variation
+			isDefault
+			relationship: f818254a-42b4-4786-b2e3-81f77e93a497
+			defaultHierarchy: LocalDateTable_fe347f23-600d-4789-93ed-4c1f14012085.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_goal
+		dataType: string
+		lineageTag: 9e494283-7b8d-49bb-ad89-095a095703bc
+		summarizeBy: none
+		sourceColumn: hs_goal
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_notes
+		dataType: string
+		lineageTag: e56849b5-6a66-46e0-bfad-26ffe102cf5c
+		summarizeBy: none
+		sourceColumn: hs_notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column hs_object_id
+		dataType: double
+		lineageTag: 9ee4ea16-f5bb-4cfe-83ca-dec63c29a457
+		summarizeBy: sum
+		sourceColumn: hs_object_id
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hs_owner
+		dataType: double
+		lineageTag: 9e96a5ac-8cb9-4037-bf04-d4643c0fe177
+		summarizeBy: sum
+		sourceColumn: hs_owner
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hs_spend_items_sum_amount
+		dataType: double
+		lineageTag: 6976a092-7128-43d9-8818-dac9544ce51b
+		summarizeBy: sum
+		sourceColumn: hs_spend_items_sum_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column hs_start_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6420c0e5-ecfe-4bff-a509-7a5f672de243
+		summarizeBy: none
+		sourceColumn: hs_start_date
+
+		variation Variation
+			isDefault
+			relationship: 7b33bcd9-6743-4a38-9afa-e78922a79b51
+			defaultHierarchy: LocalDateTable_860f348f-3888-4af9-bfb9-9e2ca6aba7ad.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Metrics_InfluencedContacts
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f5fe1ff-1629-4198-9f05-115c49946be6
+		summarizeBy: sum
+		sourceColumn: Metrics_InfluencedContacts
+
+		annotation SummarizationSetBy = Automatic
+
+	column Metrics_NewContactsFirstTouch
+		dataType: int64
+		formatString: 0
+		lineageTag: bccd3a2e-8ba1-4fa4-8040-ff5aa3fffd97
+		summarizeBy: sum
+		sourceColumn: Metrics_NewContactsFirstTouch
+
+		annotation SummarizationSetBy = Automatic
+
+	column Metrics_NewContactsLastTouch
+		dataType: int64
+		formatString: 0
+		lineageTag: a16b2613-a0a9-4828-99d0-67120e62731a
+		summarizeBy: sum
+		sourceColumn: Metrics_NewContactsLastTouch
+
+		annotation SummarizationSetBy = Automatic
+
+	column Metrics_Sessions
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ab12b25-fdd3-4507-8467-c47dda6a9d66
+		summarizeBy: sum
+		sourceColumn: Metrics_Sessions
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Campaign = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("datawarehouse-io-eur.database.windows.net", "Dev1102"),
+				    dbo_Campaign = Source{[Schema="dbo",Item="Campaign"]}[Data]
+				in
+				    dbo_Campaign
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,40 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["sys database_firewall_rules","CallDisposition","Campaign","Owner","SyncHistory","Workflow"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.1454.0 (25.02)+e2197f0c4ba3450e119e1aea750568d97991832a
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'sys database_firewall_rules'
+ref table DateTableTemplate_c5720f14-40ac-43a9-85aa-5d15af22a001
+ref table LocalDateTable_4f8f1b67-ea4a-455c-89fa-0917ce2471f9
+ref table LocalDateTable_1d9acb75-c35c-4b47-8bfb-ab88b739eb1c
+ref table CallDisposition
+ref table Campaign
+ref table LocalDateTable_fe347f23-600d-4789-93ed-4c1f14012085
+ref table LocalDateTable_860f348f-3888-4af9-bfb9-9e2ca6aba7ad
+ref table Owner
+ref table LocalDateTable_85a36679-7192-4431-bfd9-83d5610d989d
+ref table LocalDateTable_22ec3e47-d4e2-43aa-ad56-da542456bef9
+ref table LocalDateTable_c335b909-3945-4433-a638-6ee45648559d
+ref table LocalDateTable_bde0f7bb-c943-4ed6-b269-a32ee905e919
+ref table LocalDateTable_1ce94337-3311-4455-8f93-43a75f0386c4
+ref table LocalDateTable_5e8f143a-83d8-4e92-94b6-b058d65b1c6f
+ref table LocalDateTable_9e75a800-6abe-4391-9c09-e15f86b85896
+ref table LocalDateTable_5cd19da0-7494-4e11-806f-3357f78080dc
+ref table SyncHistory
+ref table LocalDateTable_60b03b44-ef23-4ebc-949d-736967888508
+ref table Workflow
+ref table LocalDateTable_3b8c7a60-6882-4f40-ab3c-2fda3ef67f6a
+
+ref cultureInfo en-US
+
